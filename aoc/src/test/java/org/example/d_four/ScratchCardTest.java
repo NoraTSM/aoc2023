@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.math.BigInteger;
 
 import static org.testng.Assert.assertEquals;
 
@@ -34,7 +33,7 @@ public class ScratchCardTest {
 
     @Test
     public void testSumCards() {
-        assertEquals(unit.sumCards(testInput), BigInteger.valueOf(13));
+        assertEquals(unit.sumCards(testInput), 13);
     }
 
     @Test
@@ -43,12 +42,7 @@ public class ScratchCardTest {
 
     @Test
     public void testSumCards_input() {
-        assertEquals(unit.sumCards(input), BigInteger.valueOf(3));
-    }
-
-    @Test
-    public void testGetaLong() {
-        assertEquals(unit.getaLong(3L), 4L);
+        assertEquals(unit.sumCards(input), 25183);
     }
 
     @Test

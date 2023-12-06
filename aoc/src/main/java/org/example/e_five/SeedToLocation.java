@@ -17,7 +17,7 @@ public class SeedToLocation {
         ImmutableLongList seeds = LongLists.immutable.ofAll(ArrayIterate.collectLong(split[0].split(": ")[1]
                                                                                              .split(" "), Long::parseLong));
 
-        IntLists.immutable.ofAll(IntStream.range(1, split.length + 1)).collect(each -> split[each].split(" map:")).flatCollect();
+        IntLists.immutable.ofAll(IntStream.range(1, split.length + 1)).collect(each -> split[each].split(" map:"));
 
 
         return 0L;
